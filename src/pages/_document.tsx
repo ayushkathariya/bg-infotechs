@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="sm:px-6 md:px-8 lg:px-14">
         <NextUIProvider>
           <Main />
           <NextScript />
