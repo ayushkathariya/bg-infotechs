@@ -1,7 +1,26 @@
 import PortfolioCard from "./PortfolioCard";
 import { Link } from "@nextui-org/react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function PortfolioSection() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1023, min: 768 },
+      items: 2,
+      slidesToSlide: 2,
+    },
+    mobile: {
+      breakpoint: { max: 767, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
   return (
     <section className="py-10">
       {/* Top Section */}
@@ -20,13 +39,29 @@ export default function PortfolioSection() {
         </div>
       </div>
       {/* Bottom Section */}
-      <div className="mt-5 flex flex-col gap-5 md:flex-wrap md:gap-7 md:flex-row md:justify-between">
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
+      <div className="mt-7">
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          responsive={responsive}
+          ssr={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={3000}
+          keyBoardControl={true}
+          customTransition="all 1.5"
+          transitionDuration={2000}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <PortfolioCard />
+          <PortfolioCard />
+          <PortfolioCard />
+          <PortfolioCard />
+          <PortfolioCard />
+          <PortfolioCard />
+        </Carousel>
       </div>
     </section>
   );
