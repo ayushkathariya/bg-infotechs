@@ -24,9 +24,6 @@ export default function HeroSection() {
         </p>
         <div className="flex justify-center gap-5 lg:justify-start">
           <Button size="lg" className="w-40">
-            About Us
-          </Button>
-          <Button size="lg" className="w-40">
             Let's Talk
           </Button>
         </div>
