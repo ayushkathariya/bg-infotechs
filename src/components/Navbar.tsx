@@ -52,8 +52,7 @@ export default function NavbarLayout() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Image src={HomeLogo} alt="home-logo" width={70} />
-          <p className="font-bold text-inherit">ACME</p>
+          <Image src={HomeLogo} alt="home-logo" width={120} />
         </NavbarBrand>
       </NavbarContent>
 

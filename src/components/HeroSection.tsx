@@ -4,7 +4,7 @@ import { Button } from "@nextui-org/react";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col  gap-7 py-7 lg:flex-row-reverse lg:items-center lg:gap-20 lg:pt-28">
+    <section className="flex flex-col  gap-7 py-7 lg:flex-row-reverse lg:items-center lg:gap-20 lg:py-16">
       {/* left section */}
       <div>
         <Image
