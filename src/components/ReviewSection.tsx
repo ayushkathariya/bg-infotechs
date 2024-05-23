@@ -1,8 +1,9 @@
+import React from "react";
+import ReviewCard from "./ReviewCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import TrustCard from "./TrustCard";
 
-export default function TrustSection() {
+export default function ReviewSection() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -22,11 +23,11 @@ export default function TrustSection() {
   };
 
   return (
-    <section className="my-10">
+    <section className="py-10 flex flex-col gap-10">
       <div>
-        <h3 className="text-center font-bold text-3xl">
-          Trusted by over 500 businesses
-        </h3>
+        <p className="text-center font-bold text-3xl">
+          What Customers Say About Us
+        </p>
       </div>
       <div className="mt-9">
         <Carousel
@@ -45,12 +46,12 @@ export default function TrustSection() {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <TrustCard />
-          <TrustCard />
-          <TrustCard />
-          <TrustCard />
-          <TrustCard />
-          <TrustCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
         </Carousel>
       </div>
     </section>
