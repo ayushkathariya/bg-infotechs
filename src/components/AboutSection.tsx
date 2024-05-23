@@ -4,13 +4,13 @@ import { Button } from "@nextui-org/react";
 
 export default function AboutSection() {
   return (
-    <section className="flex flex-col-reverse  gap-7 py-7 lg:flex-row lg:items-center lg:gap-x-28 lg:py-16">
+    <section className="flex flex-col-reverse  gap-7 py-3 lg:flex-row lg:items-center lg:gap-x-28">
       {/* right section */}
       <div>
         <Image
           src={HeroImage}
           alt="hero-image"
-          className="w-full lg:w-[145rem] lg:h-56"
+          className="w-full lg:w-[145rem] lg:h-60"
         />
       </div>
       {/*  left section */}
