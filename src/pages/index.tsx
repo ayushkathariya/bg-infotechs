@@ -16,7 +16,6 @@ export default function Home() {
       <PortfolioSection />
       <ReviewSection />
       <FAQSection />
-      <div className="h-48"></div>
     </div>
   );
 }

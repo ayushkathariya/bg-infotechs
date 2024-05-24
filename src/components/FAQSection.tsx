@@ -15,7 +15,7 @@ export default function FAQSection() {
           <Image src={HeroImage} alt="hero-img" className="w-[27rem]" />
         </div>
         <div className="lg:w-[28rem] xl:w-[35rem] 2xl:w-[42rem]">
-          <Accordion selectionMode="multiple">
+          <Accordion selectionMode="single">
             <AccordionItem
               key="1"
               aria-label="Accordion 1"
