@@ -15,7 +15,7 @@ export default function BlogDetail() {
           backgroundImage: `url(https://www.bginfotechs.com/frontend/images/blog/blog-7.jpg)`,
           backgroundSize: "cover",
           width: "100%",
-          height: "30vh",
+          height: "25vh",
         }}
       >
         <h3 className="font-bold text-4xl text-white px-4">
